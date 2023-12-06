@@ -1,0 +1,141 @@
+<head>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossOrigin="anonymous" />
+    <style>
+        a {
+            color: white;
+        }
+    </style>
+
+</head>
+<section class="container-x mx-auto relative">
+    <div class="">
+
+        <section class="container-x v-bg-navbar-hlw flex flex-wrap items-center py-2 md:py-0 px-2 md:px-0 ">
+            <div class="flex-1 flex justify-start items-center text-white"><a href="/"><img width="80" height="80" src="https://scontent.fhan2-6.fna.fbcdn.net/v/t1.0-9/125248082_114778900444115_6410241806068716818_n.png?_nc_cat=100&ccb=2&_nc_sid=09cbfe&_nc_ohc=ltcL6hgTLJYAX-4ie5R&_nc_ht=scontent.fhan2-6.fna&oh=1114be5c4f176e8424349338efbf788b&oe=5FD7C368" class="v-logo"></a>
+                <nav class="ml-2 hidden lg:block">
+
+                    <ul class=" lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0">
+                        <li class="nav-item">
+                            <a href="http://localhost/sg-shop" class="nav-link active v-font-hlw transition text-xl duration-200 font-bold px-1 block border-b-2 border-transparent hover:border-yellow-500">
+                                <img src="<?= BASE_URL ?>/public/image/v-home-hlw.png" class="h-12"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://localhost/sg-shop/?action=nap-the" class="nav-link active v-font-hlw transition text-xl duration-200 font-bold  px-1 block border-b-2 border-transparent hover:border-yellow-500">
+                                <img src="<?= BASE_URL ?>/public/image/v-load-card-hlw.png" class="h-12">
+                            </a>
+                        </li>
+                        <li class="nav-item" style=" margin-right: 180px;">
+                            <a href="" data-toggle="modal" data-target="#myModal" class="v-font-hlw cursor-pointer text-xl transition uppercase duration-200 font-bold py-2 px-1 block border-b-2 border-transparent hover:border-yellow-500">
+                                <img src="<?= BASE_URL ?>/public/image/v-bank-hlw.png" class="h-12">
+                                <div id="myModal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <h4 class="modal-title">
+                                                    <h1 style="color: rgb(230, 0, 0);"> Nạp tiền từ ATM hoặc Ví điện tử </h1>
+                                                </h4>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    <div class="p-1">
+                                                        <div class="mb-4 grid grid-cols-12 gap-1 mx-auto w-full md:max-w-3xl">
+                                                            <div class="col-span-12 md:col-span-6 border border-gray-100 bg-gray-100">
+                                                                <div class="bg-gray-200 px-3 py-1 text-lg md:text-xl md:text-center text-gray-900 font-bold">ATM</div>
+                                                                <div class="p-2 bg-gray-100 select-text">
+                                                                    <div class="text-md px-2 select-text">
+                                                                        <p><strong style="color: rgb(230, 0, 0);">THÔNG TIN TÀI KHOẢN NGÂN HÀNG</strong></p>
+                                                                        <p><strong style="color: rgb(230, 0, 0);">CHỦ TÀI KHOẢN: Nguyễn Thanh Dứa</strong></p>
+                                                                        <p><strong style="color: rgb(230, 0, 0);">BIDV: 42710000585765</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-span-12 md:col-span-6 border border-gray-100 bg-gray-100">
+                                                                <div class="bg-gray-200 px-3 py-1 text-lg md:text-xl md:text-center text-gray-900 font-bold">
+                                                                    VÍ ĐIỆN TỬ
+                                                                </div>
+                                                                <div class="p-2 bg-gray-100 select-text">
+                                                                    <div class="text-md px-2 select-text">
+                                                                        <p><strong style="color: rgb(230, 0, 0);">THÔNG TIN VÍ ĐIỆN TỬ</strong></p>
+                                                                        <p><strong style="color: rgb(230, 0, 0);">CHỦ TÀI KHOẢN: Thanh Dứa</strong></p>
+                                                                        <p><strong style="color: rgb(230, 0, 0);">VÍ MOMO: 0374972089</strong></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mt-1 col-span-12 text-gray-800 text-center text-lg px-2">
+                                                                Nội dung thanh toán: YÊU DỨA + {tên tài khoản hoặc số điện thoại} <br>Chuyển khoản xong nhắn tin vào page để được hỗ trợ.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <?php $users = $_SESSION['user'];
+                        ?>
+
+                    </ul>
+                </nav>
+
+
+                <span class="" style="margin-left: 100px;;">
+                    <a style="color: white;display: flex ;" href="?module=frontend&controller=cart&action=view">
+                        <h4>Giỏ Hàng:</h4> <i class="fas fa-shopping-cart" style=" font-size: 20px;"></i>
+                    </a>
+                </span>
+
+
+
+                <div class="dropdown" style="margin-left: 25px;">
+                    <?php $user = $_SESSION['user']  ?>
+                    <div class="dropdown__select p-2">
+                        <div class="dropdown__selected d-flex ">
+                            <img width="50px" height="50px" src="public/image/<?= $user['hinh'] ?>" alt="">
+                        </div>
+
+                        <div class="mt-2">
+                            <p style=" color: black;"><?= $user['ma_kh'] ?> </p>
+
+                        </div>
+                        <i class="fa fa-caret-down dropdown__caret"></i>
+
+                    </div>
+                    <p style="font-size: 14px ;" class="mt-4 btn btn-success"> $ : <?= $user['so_du'] ?> VNĐ </p>
+                    <ul class="dropdown-menu dropdown-menu-light">
+                        <li class="dropdown__item">
+                            <a href="?controller=user&action=update_tk"> <span class="dropdown__text">Cập Nhật Tài Khoản</span></a>
+                            <i class="fa fa-plus-circle dropdown__icon"></i>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="?controller=user&action=doi_mk"><span class="dropdown__text">Đổi Mật Khẩu</span></a>
+                            <i class="fa fa-cog dropdown__icon"></i>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="?module=backend"> <span class="dropdown__text">Trang quản trị</span>
+                                <i class="fa fa-cog dropdown__icon"></i></a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="?controller=user&action=logout"><span class="dropdown__text">Đăng Xuất</span>
+                                <i class="fa fa-circle dropdown__icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </div>
+</section>
+
+</section>
+<div class="mt-3 text-center">
+    <img src="public/image/v-line-home-hlw.png" class="w-full relative v-position-line-navbar" alt="" width="1190px">
+</div>

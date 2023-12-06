@@ -1,0 +1,122 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+     :root {
+        --primary: #08aeea;
+        --secondary: #13D2B8;
+        --purple: #bd93f9;
+        --pink: #ff6bcb;
+        --blue: #8be9fd;
+        --gray: #333;
+        --font: "Poppins", sans-serif;
+        --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+        --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 72.5%;
+    }
+    
+    body {
+        font-family: var(--font);
+        font-size: 1.4rem;
+        overflow-x: hidden;
+        font-weight: 300;
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    textarea,
+    select {
+        font-family: var(--font);
+        font-size: 1.4rem;
+        font-weight: 300;
+        outline: none;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        -webkit-appearance: none;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    
+    .sidebar-menu {
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        width: 250px;
+    }
+    
+    .sidebar-item {
+        margin-right: 8%;
+        display: flex;
+        align-items: center;
+        padding: 18px;
+        border-radius: 10px;
+        color: #333132;
+        transition: all 0.15s ease-in;
+    }
+    
+    .sidebar-item:hover {
+        color: white;
+        background-color: #7a6ed2;
+    }
+    
+    .sidebar-icon {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .sidebar-text {
+        font-weight: 500;
+    }
+    
+    .form-control {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        font-size: 1.5rem;
+    }
+    
+    @media (min-width: 768px) {
+        .col-md-10 {
+            margin-top: 2%;
+        }
+    }
+    
+    table {
+        border: 1px solid black;
+    }
+    
+    th {
+        border: 1px solid black;
+    }
+    
+    td {
+        border: 1px solid black;
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
